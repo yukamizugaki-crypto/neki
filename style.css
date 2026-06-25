@@ -772,6 +772,39 @@ li {
   transform: scale(1);
 }
 
+/* --- STORES Section --- */
+.stores-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.stores-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 45px;
+  border: 1px solid var(--border-color);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  background-color: var(--bg-card);
+  transition: var(--transition-smooth);
+}
+
+.stores-link-btn:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-card);
+  border-color: var(--text-primary);
+}
+
+.stores-link-btn .external-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: var(--transition-smooth);
+}
+
 /* --- Access / Info / Footer Area --- */
 .access-section {
   background-color: #faf9f6;
@@ -1095,6 +1128,14 @@ li {
     width: 36px;
     height: 36px;
     font-size: 1.6rem;
+  }
+
+  .stores-link-btn {
+    padding: 16px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
   }
 }
 
