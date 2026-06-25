@@ -312,7 +312,8 @@ li {
   font-weight: 400;
   letter-spacing: 0.18em;
   white-space: pre-line;
-  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+  animation: heroTextSequence 7s ease forwards;
 }
 
 /* Scroll Down Indicator */
@@ -908,6 +909,27 @@ li {
 }
 
 /* --- Animations --- */
+@keyframes heroTextSequence {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    animation-timing-function: ease-out;
+  }
+  28.57% { /* 2s */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  85.71% { /* 6s */
+    opacity: 1;
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  100% { /* 7s */
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1115,6 +1137,24 @@ li {
 
 /* Fallback/standard media query for narrow screens */
 @media (max-width: 900px) {
+  .hero-section {
+    height: 50vh;
+    min-height: 320px;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .style-section {
+    padding-top: 40px;
+  }
+
   .modal-container {
     flex-direction: column;
     max-height: 90vh;
