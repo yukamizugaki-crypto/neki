@@ -671,19 +671,19 @@ li {
 }
 
 .instagram-handle {
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   color: var(--text-primary);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
 .follow-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 24px;
+  gap: 12px;
+  padding: 14px 30px;
   border: 1px solid var(--border-color);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   background-color: var(--bg-card);
   transition: var(--transition-smooth);
 }
@@ -695,8 +695,8 @@ li {
 }
 
 .follow-btn svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
