@@ -85,6 +85,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalTitle = modal.querySelector('.modal-title');
     const modalDetails = modal.querySelector('.modal-details');
     const modalContentCol = modal.querySelector('.modal-content-col');
+    const modalContainer = modal.querySelector('.modal-container');
+
+    const adjustModalLayout = () => {
+      if (!modalContainer) return;
+      // Stacks vertically on screens narrower than 900px, or in portrait orientation, or on touch devices
+      const isVertical = window.innerWidth < 900 || 
+                         window.innerHeight > window.innerWidth || 
+                         ('ontouchstart' in window) || 
+                         (navigator.maxTouchPoints > 0);
+      
+      if (isVertical) {
+        modalContainer.classList.add('vertical-layout');
+      } else {
+        modalContainer.classList.remove('vertical-layout');
+      }
+    };
 
     styleCards.forEach(card => {
       // Style cursor to signify clickability
@@ -95,6 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('.card-button')) {
           return;
         }
+
+        // Adjust layout before opening
+        adjustModalLayout();
 
         // Extract background image and content dynamically from the clicked card
         const bgImg = window.getComputedStyle(card).backgroundImage;
@@ -142,6 +161,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeModal();
+      }
+    });
+
+    // Listen to resize events to dynamically update open modal layouts
+    window.addEventListener('resize', () => {
+      if (modal.classList.contains('active')) {
+        adjustModalLayout();
       }
     });
   }
