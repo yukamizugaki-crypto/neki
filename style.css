@@ -355,6 +355,24 @@ li {
   background-color: var(--bg-primary);
 }
 
+.style-intro {
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  line-height: 2.5;
+  letter-spacing: 0.08em;
+}
+
+.style-intro p {
+  margin-bottom: 12px;
+}
+
+.style-intro p:last-child {
+  margin-bottom: 0;
+}
+
 .style-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1136,6 +1154,16 @@ li {
     width: 100%;
     max-width: 320px;
     justify-content: center;
+  }
+
+  .style-intro {
+    margin-bottom: 50px;
+    font-size: 0.92rem;
+    line-height: 2.2;
+    padding: 0 10px;
+  }
+  .style-intro p {
+    margin-bottom: 10px;
   }
 }
 
