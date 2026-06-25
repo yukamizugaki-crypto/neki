@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <meta name="description" content="ねき - 大阪府高槻市。野菜を中心に、季節の料理をお出ししています。昼の野菜ランチプレート、土曜夜のアラカルト、おまかせコース。">
+  <title>ねき | 野菜を中心に、季節の料理をお出ししています</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header" id="header">
+    <div class="header-logo">
+      <a href="#">
+        <img src="img/ロゴ_transparent.png" alt="ねき ロゴ" class="logo-img logo-light">
+        <img src="img/ロゴ_dark_transparent.png" alt="ねき ロゴ" class="logo-img logo-dark">
+      </a>
+    </div>
+    
+    <button class="mobile-toggle" aria-label="メニューを開閉する">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav-container">
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">トップ</a></li>
+        <li><a href="#style" class="nav-link">コース</a></li>
+        <li><a href="#access" class="nav-link">アクセス</a></li>
+        <li>
+          <a href="https://www.instagram.com/n_e_k_i/" class="instagram-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="img/ヒーローセクション.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content">
+      <p class="hero-text">野菜を中心に、<br>季節の料理をお出ししています。</p>
+    </div>
+    </div>
+    
+    <a href="#style" class="scroll-indicator" aria-label="下にスクロール">
+      <span>SCROLL</span>
+      <svg viewBox="0 0 24 24">
+        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- Business Style Section (営業スタイル) -->
+  <section class="style-section section-padding" id="style">
+    <div class="container">
+      <div class="style-grid">
+        
+        <!-- Left: Lunch Card -->
+        <div class="style-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </div>
+          <h2 class="card-title">昼｜野菜で満ちるランチプレート</h2>
+          <div class="card-divider"></div>
+          <div class="card-details">
+            <p><strong>予約不要</strong></p>
+            <p>11:30～14:30</p>
+            <p>(売り切れ次第終了)</p>
+          </div>
+        </div>
+        
+        <!-- Middle: Saturday Night Card -->
+        <div class="style-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <h2 class="card-title">
+            <span>土曜夜 | アラカルト</span>
+            <span style="font-size: 0.95rem; font-weight: normal; color: var(--text-secondary); margin-top: 4px;">日本ワインと野菜料理</span>
+          </h2>
+          <div class="card-divider"></div>
+          <div class="card-details">
+            <p>17:30〜21:00</p>
+            <p>お一人様お気軽に</p>
+            <p>ドリンクオーダーお願いします</p>
+          </div>
+        </div>
+        
+        <!-- Right: Course Card -->
+        <div class="style-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <h2 class="card-title">
+            <span>香りを綴る</span>
+            <span>おまかせコース</span>
+          </h2>
+          <div class="card-divider"></div>
+          <div class="card-details">
+            <p><strong>前日までのご予約制</strong></p>
+          </div>
+          <a href="https://www.instagram.com/p/DW1rML3k9AD/?img_index=1" class="card-button" target="_blank" rel="noopener noreferrer">コースの詳細</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar Section (営業日カレンダー) -->
+  <section class="calendar-section section-padding" id="calendar">
+    <div class="container">
+      <div class="calendar-layout">
+        
+        <!-- Info Column -->
+        <div class="calendar-info">
+          <h2 class="section-title">営業日カレンダー</h2>
+          <p class="section-subtitle">最新の営業日はカレンダーをご確認ください。</p>
+          
+          <div class="calendar-legend">
+            <div class="legend-item">
+              <span class="legend-color lunch"></span>
+              <span>ランチ営業</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color dinner"></span>
+              <span>昼・夜営業</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color closed"></span>
+              <span>休業</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color special"></span>
+              <span>イベント・特別営業</span>
+            </div>
+          </div>
+          
+          <a href="https://www.instagram.com/n_e_k_i/" target="_blank" rel="noopener noreferrer" class="calendar-more">
+            カレンダーをもっと見る &rarr;
+          </a>
+        </div>
+        
+        <!-- Calendar Grid -->
+        <div class="calendar-wrapper">
+          <div class="calendar-header">
+            <h3 class="calendar-month-title">2026年6月</h3>
+            <div class="calendar-nav-buttons">
+              <button class="cal-btn nav-arrow">&lt;</button>
+              <button class="cal-btn nav-arrow">&gt;</button>
+              <button class="cal-btn">今日</button>
+            </div>
+          </div>
+          
+          <!--
+          Googleカレンダーを実際に埋め込む場合は、以下の「table.calendar-grid」を削除し、
+          取得したGoogleカレンダーの埋め込み用<iframe>タグをここにペーストしてください。
+          例: <iframe src="https://calendar.google.com/calendar/embed?src=..." style="border: 0" width="100%" height="450" frameborder="0" scrolling="no"></iframe>
+          -->
+          <table class="calendar-grid">
+            <thead>
+              <tr>
+                <th>日</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1: May 31 to Jun 6 -->
+              <tr>
+                <td class="other-month">
+                  <div class="day-number">31</div>
+                </td>
+                <td>
+                  <div class="day-number">1</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">2</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">3</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">4</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">5</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">6</div>
+                  <div class="calendar-event lunch-dinner"><span class="full-text">昼・夜営業</span><span class="mobile-text">昼夜</span></div>
+                </td>
+              </tr>
+              
+              <!-- Row 2: Jun 7 to Jun 13 -->
+              <tr>
+                <td>
+                  <div class="day-number">7</div>
+                </td>
+                <td>
+                  <div class="day-number">8</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">9</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">10</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">11</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">12</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">13</div>
+                  <div class="calendar-event lunch-dinner"><span class="full-text">昼・夜営業</span><span class="mobile-text">昼夜</span></div>
+                </td>
+              </tr>
+              
+              <!-- Row 3: Jun 14 to Jun 20 -->
+              <tr>
+                <td>
+                  <div class="day-number">14</div>
+                </td>
+                <td>
+                  <div class="day-number">15</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">16</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">17</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">18</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">19</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">20</div>
+                  <div class="calendar-event lunch-dinner"><span class="full-text">昼・夜営業</span><span class="mobile-text">昼夜</span></div>
+                </td>
+              </tr>
+              
+              <!-- Row 4: Jun 21 to Jun 27 -->
+              <tr>
+                <td>
+                  <div class="day-number">21</div>
+                </td>
+                <td>
+                  <div class="day-number">22</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">23</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">24</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">25</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td>
+                  <div class="day-number">26</div>
+                  <div class="calendar-event special-day font-small"><span class="full-text">イベント営業</span><span class="mobile-text">特</span></div>
+                </td>
+                <td>
+                  <div class="day-number">27</div>
+                  <div class="calendar-event lunch-dinner"><span class="full-text">昼・夜営業</span><span class="mobile-text">昼夜</span></div>
+                </td>
+              </tr>
+              
+              <!-- Row 5: Jun 28 to Jul 4 -->
+              <tr>
+                <td>
+                  <div class="day-number">28</div>
+                </td>
+                <td>
+                  <div class="day-number">29</div>
+                  <div class="calendar-event closed-day"><span class="full-text">休業</span><span class="mobile-text">休</span></div>
+                </td>
+                <td>
+                  <div class="day-number">30</div>
+                  <div class="calendar-event lunch-only"><span class="full-text">ランチ営業</span><span class="mobile-text">昼</span></div>
+                </td>
+                <td class="other-month">
+                  <div class="day-number">1</div>
+                </td>
+                <td class="other-month">
+                  <div class="day-number">2</div>
+                </td>
+                <td class="other-month">
+                  <div class="day-number">3</div>
+                </td>
+                <td class="other-month">
+                  <div class="day-number">4</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Section -->
+  <section class="instagram-section section-padding" id="instagram">
+    <div class="container">
+      <div class="instagram-header">
+        <div class="instagram-title-area">
+          <h2 class="section-title">Instagram</h2>
+          <p class="section-subtitle">日々の料理やお店の様子をご覧いただけます。</p>
+        </div>
+        <div class="instagram-follow-box">
+          <span class="instagram-handle">@n_e_k_i</span>
+          <a href="https://www.instagram.com/n_e_k_i/" target="_blank" rel="noopener noreferrer" class="follow-btn">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>フォローする</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="instagram-grid">
+        <a href="https://www.instagram.com/n_e_k_i/" class="instagram-item" target="_blank" rel="noopener noreferrer">
+          <img src="img/insta1.jpg" alt="ねき のお料理1" class="instagram-img">
+          <div class="instagram-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/n_e_k_i/" class="instagram-item" target="_blank" rel="noopener noreferrer">
+          <img src="img/insta2.png" alt="ねき の店内" class="instagram-img">
+          <div class="instagram-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/n_e_k_i/" class="instagram-item" target="_blank" rel="noopener noreferrer">
+          <img src="img/insta3.png" alt="ねき のお料理2" class="instagram-img">
+          <div class="instagram-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/n_e_k_i/" class="instagram-item" target="_blank" rel="noopener noreferrer">
+          <img src="img/insta4.png" alt="ねき の日本ワイン" class="instagram-img">
+          <div class="instagram-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Section -->
+  <section class="access-section section-padding" id="access">
+    <div class="container">
+      <div class="access-grid">
+        
+        <!-- Access Column -->
+        <div class="access-col">
+          <h2 class="access-col-title">アクセス</h2>
+          <div class="access-text-block">
+            <p>
+              〒569-1145<br>
+              大阪府高槻市富田丘町6-18<br>
+              (駐車場なし)
+            </p>
+            <p>
+              JR摂津富田・阪急富田 より徒歩7分
+            </p>
+            <p>
+              <strong>お支払い方法</strong><br>
+              現金
+            </p>
+          </div>
+        </div>
+        
+        <!-- Google Map Column -->
+        <div class="access-col">
+          <h2 class="access-col-title" style="visibility: hidden; margin-bottom: 24px;">地図</h2>
+          <div class="access-map-wrapper">
+            <!-- Google Maps Responsive Iframe -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.986616035071!2d135.5866628!3d34.83655419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fd4e8a581dcb%3A0xa1596357a9dce9aa!2z44Gt44GN!5e0!3m2!1sja!2sjp!4v1718698000000!5m2!1sja!2sjp" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        
+        <!-- First Time Visitor Column -->
+        <div class="access-col">
+          <h2 class="access-col-title">はじめての方へ</h2>
+          <ul class="first-time-list">
+            <li>ランチは予約不要です</li>
+            <li>コースは前日までご予約制です。</li>
+            <li>土曜夜のアラカルトは予約不要です</li>
+            <li>小さなお子様の入店はご遠慮いただいております</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p class="copyright">&copy; 2026 ねき</p>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
