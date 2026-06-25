@@ -360,8 +360,8 @@ li {
   margin-bottom: 80px;
   font-family: var(--font-sans);
   color: var(--text-primary);
-  font-size: 1.05rem;
-  line-height: 2.5;
+  font-size: 1.2rem;
+  line-height: 2.6;
   letter-spacing: 0.08em;
 }
 
@@ -1158,8 +1158,8 @@ li {
 
   .style-intro {
     margin-bottom: 50px;
-    font-size: 1.02rem;
-    line-height: 2.4;
+    font-size: 1.15rem;
+    line-height: 2.5;
     padding: 0 10px;
   }
   .style-intro p {
