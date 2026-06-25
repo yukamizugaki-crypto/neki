@@ -1176,7 +1176,7 @@ li {
   .style-note {
     display: block;
     text-align: center;
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     margin-top: 24px;
     letter-spacing: 0.05em;
