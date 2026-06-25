@@ -73,4 +73,76 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 4. Modal Overlay for Style Cards
+  const styleCards = document.querySelectorAll('.style-card');
+  const modal = document.querySelector('#style-modal');
+  
+  if (styleCards.length && modal) {
+    const modalBackdrop = modal.querySelector('.modal-backdrop');
+    const modalCloseBtn = modal.querySelector('.modal-close-btn');
+    const modalImageCol = modal.querySelector('.modal-image-col');
+    const modalTitle = modal.querySelector('.modal-title');
+    const modalDetails = modal.querySelector('.modal-details');
+    const modalContentCol = modal.querySelector('.modal-content-col');
+
+    styleCards.forEach(card => {
+      // Style cursor to signify clickability
+      card.style.cursor = 'pointer';
+
+      card.addEventListener('click', (e) => {
+        // If the user clicked the CTA button directly, let the default link behavior take over
+        if (e.target.closest('.card-button')) {
+          return;
+        }
+
+        // Extract background image and content dynamically from the clicked card
+        const bgImg = window.getComputedStyle(card).backgroundImage;
+        const titleHtml = card.querySelector('.card-title').innerHTML;
+        const detailsHtml = card.querySelector('.card-details').innerHTML;
+
+        // Apply to modal
+        modalImageCol.style.backgroundImage = bgImg;
+        modalTitle.innerHTML = titleHtml;
+        modalDetails.innerHTML = detailsHtml;
+
+        // Clean up any existing dynamically replicated buttons
+        const existingModalBtn = modalContentCol.querySelector('.modal-btn');
+        if (existingModalBtn) {
+          existingModalBtn.remove();
+        }
+
+        // If card contains a CTA button, replicate it in the modal
+        const cardBtn = card.querySelector('.card-button');
+        if (cardBtn) {
+          const modalBtn = document.createElement('a');
+          modalBtn.className = 'modal-btn';
+          modalBtn.href = cardBtn.href;
+          modalBtn.target = cardBtn.target;
+          modalBtn.rel = cardBtn.rel;
+          modalBtn.innerHTML = cardBtn.innerHTML;
+          modalContentCol.appendChild(modalBtn);
+        }
+
+        // Open modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeModal = () => {
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    };
+
+    modalCloseBtn.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+
+    // Escape key closes modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  }
 });
