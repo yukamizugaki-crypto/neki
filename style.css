@@ -358,7 +358,7 @@ li {
 .style-intro {
   text-align: center;
   margin-bottom: 80px;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   color: var(--text-primary);
   font-size: 1.05rem;
   line-height: 2.5;
