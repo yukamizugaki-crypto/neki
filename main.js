@@ -120,8 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const titleHtml = card.querySelector('.card-title').innerHTML;
         const detailsHtml = card.querySelector('.card-details').innerHTML;
 
+        // Parse image URL from computed CSS backgroundImage
+        const match = bgImg.match(/url\(['"]?([^'"]+)['"]?\)/);
+        const imgSrc = match ? match[1] : '';
+
         // Apply to modal
-        modalImageCol.style.backgroundImage = bgImg;
+        const modalImg = modal.querySelector('#modal-img');
+        if (modalImg) {
+          modalImg.src = imgSrc;
+        }
         modalTitle.innerHTML = titleHtml;
         modalDetails.innerHTML = detailsHtml;
 

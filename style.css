@@ -964,9 +964,17 @@ li {
 
 .modal-image-col {
   width: 50%;
-  background-size: cover;
-  background-position: center;
   min-height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .modal-content-col {
@@ -1036,8 +1044,16 @@ li {
 
 .modal-container.vertical-layout .modal-image-col {
   width: 100%;
-  height: 240px;
-  min-height: 240px;
+  height: auto;
+  min-height: auto;
+  display: block;
+}
+
+.modal-container.vertical-layout .modal-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .modal-container.vertical-layout .modal-content-col {
@@ -1063,8 +1079,16 @@ li {
   
   .modal-image-col {
     width: 100%;
-    height: 240px;
-    min-height: 240px;
+    height: auto;
+    min-height: auto;
+    display: block;
+  }
+  
+  .modal-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
   }
   
   .modal-content-col {
