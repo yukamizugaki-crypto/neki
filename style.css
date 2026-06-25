@@ -1104,3 +1104,19 @@ li {
     font-size: 1.6rem;
   }
 }
+
+/* Tap Notice for Style Cards (Responsive / Touch only) */
+.style-note {
+  display: none;
+}
+
+@media (max-width: 900px), (hover: none) {
+  .style-note {
+    display: block;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-top: 24px;
+    letter-spacing: 0.05em;
+  }
+}
