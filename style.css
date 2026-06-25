@@ -794,13 +794,6 @@ li {
   flex-direction: column;
 }
 
-.access-col-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 500;
-  margin-bottom: 24px;
-  letter-spacing: 0.08em;
-}
 
 .access-text-block {
   font-size: 0.9rem;
