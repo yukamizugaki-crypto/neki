@@ -651,7 +651,7 @@ li {
 .instagram-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -664,26 +664,26 @@ li {
 }
 
 .instagram-follow-box {
-  text-align: right;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 .instagram-handle {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  font-size: 1.15rem;
+  color: var(--text-primary);
   font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 .follow-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
+  gap: 10px;
+  padding: 12px 24px;
   border: 1px solid var(--border-color);
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   background-color: var(--bg-card);
   transition: var(--transition-smooth);
 }
@@ -695,22 +695,45 @@ li {
 }
 
 .follow-btn svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   fill: currentColor;
 }
 
 .instagram-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  padding-bottom: 24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Elegant scrollbar styling */
+.instagram-grid::-webkit-scrollbar {
+  height: 6px;
+}
+.instagram-grid::-webkit-scrollbar-track {
+  background: var(--border-light);
+  border-radius: 3px;
+}
+.instagram-grid::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 3px;
+}
+.instagram-grid::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
 }
 
 .instagram-item {
   position: relative;
-  aspect-ratio: 1 / 1;
+  flex: 0 0 346px;
+  height: 380px;
   overflow: hidden;
   background-color: #ddd;
+  scroll-snap-align: start;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-smooth);
 }
 
 .instagram-img {
