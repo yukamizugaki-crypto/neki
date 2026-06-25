@@ -1165,6 +1165,24 @@ li {
   .style-intro p {
     margin-bottom: 10px;
   }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+  
+  .legend-item {
+    font-size: 0.95rem;
+  }
+
+  .access-text-block {
+    font-size: 1.02rem;
+    line-height: 2.3;
+  }
+
+  .first-time-list {
+    font-size: 1.02rem;
+    line-height: 2.3;
+  }
 }
 
 /* Tap Notice for Style Cards (Responsive / Touch only) */
