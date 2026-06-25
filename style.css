@@ -1167,20 +1167,25 @@ li {
   }
 
   .section-subtitle {
-    font-size: 0.98rem;
+    font-size: 1.2rem;
   }
   
   .legend-item {
-    font-size: 0.95rem;
+    font-size: 1.3rem;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
   }
 
   .access-text-block {
-    font-size: 1.02rem;
+    font-size: 1.2rem;
     line-height: 2.3;
   }
 
   .first-time-list {
-    font-size: 1.02rem;
+    font-size: 1.2rem;
     line-height: 2.3;
   }
 }
