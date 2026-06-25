@@ -478,9 +478,9 @@ li {
 }
 
 .calendar-layout {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .calendar-info {
@@ -489,11 +489,16 @@ li {
   justify-content: flex-start;
 }
 
+.calendar-info .section-subtitle {
+  margin-bottom: 16px;
+}
+
 .calendar-legend {
-  margin: 30px 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .legend-item {
@@ -514,21 +519,6 @@ li {
 .legend-color.dinner { background-color: var(--accent-dinner); }
 .legend-color.closed { background-color: var(--accent-closed); }
 .legend-color.special { background-color: var(--accent-special); }
-
-.calendar-more {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 20px;
-  font-weight: 500;
-}
-
-.calendar-more:hover {
-  color: var(--text-primary);
-  transform: translateX(4px);
-}
 
 /* Mock Calendar Table Styles */
 .calendar-wrapper {
