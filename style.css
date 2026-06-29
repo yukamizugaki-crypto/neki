@@ -547,6 +547,39 @@ li {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    padding: 15px;
+  }
+}
+
+/* Google Calendar Embed Container */
+.google-calendar-container {
+  width: 100%;
+  height: 560px; /* Cropped container height (600px - 40px) */
+  overflow: hidden;
+  position: relative;
+}
+
+.google-calendar-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px; /* Over-height to push bottom bar (timezone, "+Google Calendar" button) outside container */
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .google-calendar-container {
+    height: 440px; /* Cropped container height on mobile (480px - 40px) */
+  }
+  .google-calendar-container iframe {
+    height: 480px; /* Over-height on mobile */
+  }
+}
+
 .calendar-header {
   display: flex;
   justify-content: space-between;
