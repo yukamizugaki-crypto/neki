@@ -20,6 +20,8 @@
   --accent-closed-text: #4e634a;
   --accent-special: #f9f2dd;  /* Soft mustard/gold for special events */
   --accent-special-text: #826e3d;
+  --accent-cooking: #f6ddd6;  /* Soft peach/pink for cooking classes */
+  --accent-cooking-text: #8c5d53;
 
   --accent-brand: #3f5551;    /* Primary brand accent */
   
@@ -541,6 +543,7 @@ li {
 .legend-color.dinner { background-color: var(--accent-dinner); }
 .legend-color.closed { background-color: var(--accent-closed); }
 .legend-color.special { background-color: var(--accent-special); }
+.legend-color.cooking { background-color: var(--accent-cooking); }
 
 /* Mock Calendar Table Styles */
 .calendar-wrapper {
@@ -696,6 +699,11 @@ li {
 .calendar-event.special-day {
   background-color: var(--accent-special);
   color: var(--accent-special-text);
+}
+
+.calendar-event.cooking-class {
+  background-color: var(--accent-cooking);
+  color: var(--accent-cooking-text);
 }
 
 /* --- Instagram Section --- */
