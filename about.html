@@ -16,149 +16,75 @@
 </head>
 <body class="about-page-body">
 
-  <!-- Header -->
-  <header class="main-header scrolled" id="header">
-    <div class="header-logo">
-      <a href="index.html">
-        <img src="img/ロゴ_dark_transparent.png" alt="ねき ロゴ" class="logo-img">
-      </a>
+  <!-- Close Button to Go Back to Top Page -->
+  <a href="index.html#about-table" class="about-close-btn" aria-label="閉じる">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <!-- The mockup 3-column layout as the full page content -->
+  <div class="about-table-section full-page-layout">
+    <!-- Left Column: Chef image (①) -->
+    <div class="about-left-col">
+      <img src="img/①.jpg" alt="料理をする様子" class="about-left-img">
     </div>
     
-    <button class="mobile-toggle" aria-label="メニューを開閉する">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    
-    <nav class="nav-container">
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">トップ</a></li>
-        <li><a href="index.html#style" class="nav-link">コース</a></li>
-        <li><a href="index.html#access" class="nav-link">アクセス</a></li>
-        <li>
-          <a href="https://www.instagram.com/n_e_k_i/" class="instagram-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- About Detail Main Content -->
-  <main class="about-detail-main">
-    <div class="about-detail-container">
+    <!-- Center Column: Concept text -->
+    <div class="about-center-col">
+      <h1 class="about-title">ねきの食卓について</h1>
+      <div class="about-divider"></div>
       
-      <div class="about-detail-header">
-        <h1 class="about-detail-title">ねきの食卓について</h1>
-        <div class="about-detail-subtitle">About Neki's Dining Table</div>
-        <div class="about-detail-divider"></div>
+      <div class="about-text-container">
+        <div class="about-text-line">はじまりは、両親が育てる不揃いの野菜でした。</div>
+        <div class="about-text-line">その野菜を前にすると、</div>
+        <div class="about-text-line">何を作ろうかと考えます。</div>
+        <div class="about-text-line">スープにしようか。</div>
+        <div class="about-text-line">保存食にしようか。</div>
+        <div class="about-text-line">スパイスを合わせて、新しい一皿にしようか。</div>
+        <div class="about-text-line">料理は、私にとって季節を受け取る方法です。</div>
+        <div class="about-text-line">フードコーディネーターとして積み重ねてきた経験を土台に、</div>
+        <div class="about-text-line">いまは素材や季節と向き合いながら、日々自由に料理をしています。</div>
+        <div class="about-text-line">保存食を仕込むこと。</div>
+        <div class="about-text-line">季節の手仕事を楽しむこと。</div>
+        <div class="about-text-line">スパイスの香りを重ねること。</div>
+        <div class="about-text-line">日本ワインを通して、土地の風土にふれること。</div>
+        <div class="about-text-line">私の中では、それらはすべてひとつにつながっています。</div>
+        <div class="about-text-line">身近な素材を、どう生かすか。</div>
+        <div class="about-text-line">その積み重ねが、ねきの料理になりました。</div>
+        <div class="about-text-line">店でお出しする一皿も、</div>
+        <div class="about-text-line">日本ワインとのペアリングも、</div>
+        <div class="about-text-line">料理教室でお伝えすることも、</div>
+        <div class="about-text-line">その根っこにある思いは変わりません。</div>
+        <div class="about-text-line">季節にふれ、味わい、囲む。</div>
+        <div class="about-text-line">そんな時間を、ねきでお届けできたらうれしく思います。</div>
       </div>
-
-      <!-- Introduction Story Section -->
-      <section class="about-detail-story">
-        <div class="about-text-container">
-          <div class="about-text-line">はじまりは、両親が育てる不揃いの野菜でした。</div>
-          <div class="about-text-line">その野菜を前にすると、</div>
-          <div class="about-text-line">何を作ろうかと考えます。</div>
-          <div class="about-text-line">スープにしようか。</div>
-          <div class="about-text-line">保存食にしようか。</div>
-          <div class="about-text-line">スパイスを合わせて、新しい一皿にしようか。</div>
-          <div class="about-text-line">料理は、私にとって季節を受け取る方法です。</div>
-          <div class="about-text-line">フードコーディネーターとして積み重ねてきた経験を土台に、</div>
-          <div class="about-text-line">いまは素材や季節と向き合いながら、日々自由に料理をしています。</div>
-          <div class="about-text-line">保存食を仕込むこと。</div>
-          <div class="about-text-line">季節の手仕事を楽しむこと。</div>
-          <div class="about-text-line">スパイスの香りを重ねること。</div>
-          <div class="about-text-line">日本ワインを通して、土地の風土にふれること。</div>
-          <div class="about-text-line">私の中では、それらはすべてひとつにつながっています。</div>
-          <div class="about-text-line">身近な素材を、どう生かすか。</div>
-          <div class="about-text-line">その積み重ねが、ねきの料理になりました。</div>
-          <div class="about-text-line">店でお出しする一皿も、</div>
-          <div class="about-text-line">日本ワインとのペアリングも、</div>
-          <div class="about-text-line">料理教室でお伝えすることも、</div>
-          <div class="about-text-line">その根っこにある思いは変わりません。</div>
-          <div class="about-text-line">季節にふれ、味わい、囲む。</div>
-          <div class="about-text-line">そんな時間を、ねきでお届けできたらうれしく思います。</div>
-        </div>
-      </section>
-
-      <!-- Image Showcase Gallery Grid -->
-      <section class="about-detail-gallery">
-        <h2 class="gallery-title">風景と素材</h2>
-        <div class="gallery-grid">
-          
-          <div class="gallery-item large">
-            <div class="gallery-img-box">
-              <img src="img/①.jpg" alt="料理をする様子">
-            </div>
-            <div class="gallery-caption">
-              <h3>料理をする時間</h3>
-              <p>素材の持ち味を引き出し、五感で季節を感じる一皿へと仕立てます。</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-img-box">
-              <img src="img/②.jpg" alt="岡山・美作の畑">
-            </div>
-            <div class="gallery-caption">
-              <h3>岡山・美作の畑</h3>
-              <p>両親が丹精込めて育てる、生命力あふれる不揃いの野菜たち。</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-img-box">
-              <img src="img/③.jpg" alt="野菜とスパイス">
-            </div>
-            <div class="gallery-caption">
-              <h3>野菜とスパイス</h3>
-              <p>新鮮な素材にハーブやスパイスを掛け合わせ、新しい表情を引き出します。</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-img-box">
-              <img src="img/④.jpg" alt="日本ワインとの出会い">
-            </div>
-            <div class="gallery-caption">
-              <h3>日本ワインとの出会い</h3>
-              <p>日本の土地が育むワイン。風土が香る一杯と料理のペアリング。</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-img-box">
-              <img src="img/⑤.jpg" alt="ねきの食卓">
-            </div>
-            <div class="gallery-caption">
-              <h3>ねきの食卓</h3>
-              <p>美味しい料理とワインを囲み、日常がふっと調う豊かなひととき。</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Return Button -->
-      <div class="back-home-container">
-        <a href="index.html#about-table" class="back-home-btn">
-          <svg viewBox="0 0 24 24" class="back-arrow-icon"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>トップページへ戻る</span>
-        </a>
+      
+      <div class="about-footer-logo">
+        <img src="img/ロゴ_dark_transparent.png" alt="ねき" class="about-small-logo">
       </div>
-
     </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <p class="copyright">&copy; 2026 ねき</p>
+    
+    <!-- Right Column: Stacked images (② to ⑤) -->
+    <div class="about-right-col">
+      <div class="about-right-item">
+        <img src="img/②.jpg" alt="岡山・美作の畑" class="about-right-img">
+        <span class="about-right-label">岡山・美作の畑</span>
+      </div>
+      <div class="about-right-item">
+        <img src="img/③.jpg" alt="野菜とスパイス" class="about-right-img">
+        <span class="about-right-label">野菜とスパイス</span>
+      </div>
+      <div class="about-right-item">
+        <img src="img/④.jpg" alt="日本ワインとの出会い" class="about-right-img">
+        <span class="about-right-label">日本ワインとの出会い</span>
+      </div>
+      <div class="about-right-item">
+        <img src="img/⑤.jpg" alt="ねきの食卓" class="about-right-img">
+        <span class="about-right-label">ねきの食卓</span>
+      </div>
     </div>
-  </footer>
+  </div>
 
   <!-- JS Scripts -->
   <script src="main.js"></script>
