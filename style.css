@@ -12,14 +12,16 @@
   --border-light: #f0edea;    /* Very soft border line */
   
   /* Calendar & Theme Accent Colors */
-  --accent-lunch: #e2ede0;    /* Light green for lunch */
-  --accent-lunch-text: #4e634a;
-  --accent-dinner: #d6e2e0;   /* Muted dark slate/blue-gray for lunch & dinner */
-  --accent-dinner-text: #3f5551;
-  --accent-closed: #efeae5;   /* Warm gray/brown for closed days */
-  --accent-closed-text: #786b62;
+  --accent-lunch: #d4eaec;    /* Light blue-green for lunch */
+  --accent-lunch-text: #324749;
+  --accent-dinner: #d3cae5;   /* Light lavender for lunch & dinner */
+  --accent-dinner-text: #3c3250;
+  --accent-closed: #d0daea;   /* Light gray-blue for closed days */
+  --accent-closed-text: #2f3e54;
   --accent-special: #f9f2dd;  /* Soft mustard/gold for special events */
   --accent-special-text: #826e3d;
+  --accent-cooking: #f6ddd6;  /* Soft peach/pink for cooking classes */
+  --accent-cooking-text: #8c5d53;
 
   --accent-brand: #3f5551;    /* Primary brand accent */
   
@@ -266,11 +268,13 @@ li {
   position: relative;
   width: 100%;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-light);
+  background-color: #000;
 }
 
 .hero-video-container {
@@ -280,12 +284,13 @@ li {
   width: 100%;
   height: 100%;
   z-index: 1;
+  background-color: #000;
 }
 
 .hero-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero-overlay {
@@ -538,6 +543,7 @@ li {
 .legend-color.dinner { background-color: var(--accent-dinner); }
 .legend-color.closed { background-color: var(--accent-closed); }
 .legend-color.special { background-color: var(--accent-special); }
+.legend-color.cooking { background-color: var(--accent-cooking); }
 
 /* Mock Calendar Table Styles */
 .calendar-wrapper {
@@ -693,6 +699,11 @@ li {
 .calendar-event.special-day {
   background-color: var(--accent-special);
   color: var(--accent-special-text);
+}
+
+.calendar-event.cooking-class {
+  background-color: var(--accent-cooking);
+  color: var(--accent-cooking-text);
 }
 
 /* --- Instagram Section --- */
@@ -1171,9 +1182,17 @@ li {
 /* Fallback/standard media query for narrow screens */
 @media (max-width: 900px) {
   .hero-section {
-    height: 50vh;
-    min-height: 320px;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    max-height: 100vh;
+    max-height: 100dvh;
   }
+
+  .hero-video {
+    object-fit: cover;
+  }
+
 
   .hero-text {
     font-size: 1.6rem;
