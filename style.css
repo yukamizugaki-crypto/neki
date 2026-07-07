@@ -1475,61 +1475,57 @@ li {
 
 /* --- About Table Section Responsive --- */
 @media (max-width: 900px) {
-  .about-table-section {
+  .about-table-section.full-page-layout {
     grid-template-columns: 1fr;
   }
   
-  .about-left-col {
+  .about-table-section.full-page-layout .about-left-col {
     height: 400px;
   }
   
-  .about-center-col {
-    padding: 60px 24px;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+  .about-table-section.full-page-layout .about-center-col {
+    min-height: auto;
+    padding: 80px 24px 60px 24px;
+    justify-content: center;
   }
   
-  .about-text-line {
+  .about-table-section.full-page-layout .about-text-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+  
+  .about-table-section.full-page-layout .about-text-line {
     font-size: 14px;
+    line-height: 2.2;
   }
   
-  .about-right-col {
+  .about-table-section.full-page-layout .about-right-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: auto;
+    gap: 2px;
   }
   
-  .about-right-item {
+  .about-table-section.full-page-layout .about-right-item {
     height: 220px;
-    border-bottom: none;
-    border-right: 1px solid var(--border-light);
   }
   
-  .about-right-item:nth-child(even) {
-    border-right: none;
-  }
-  
-  .about-right-item:nth-child(1),
-  .about-right-item:nth-child(2) {
-    border-bottom: 1px solid var(--border-light);
+  .about-close-btn {
+    top: 20px;
+    left: 20px;
+    background-color: var(--bg-card);
   }
 }
 
 @media (max-width: 600px) {
-  .about-text-line {
+  .about-table-section.full-page-layout .about-text-line {
     font-size: 3.1vw;
-    letter-spacing: 0.05em;
+    line-height: 2.2;
   }
-  .about-title {
+  
+  .about-table-section.full-page-layout .about-title {
     font-size: 1.5rem;
-  }
-  .about-divider {
-    margin-bottom: 24px;
-  }
-  .about-center-col {
-    padding: 40px 16px;
   }
 }
 
@@ -1537,7 +1533,8 @@ li {
 .about-page-body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent body scrolling on desktop for mockup fidelity */
+  overflow-y: auto; /* Allow vertical scrolling if text content exceeds viewport height */
+  overflow-x: hidden;
   background-color: var(--bg-primary);
 }
 
@@ -1568,92 +1565,27 @@ li {
 }
 
 .about-table-section.full-page-layout {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   border-bottom: none;
 }
 
-/* Adjust about-center-col padding to fit vertically within 100vh */
+/* Adjust about-center-col padding to fit content vertically */
 .about-table-section.full-page-layout .about-center-col {
-  height: 100vh;
-  padding: 5vh 30px;
+  min-height: 100vh;
+  padding: 60px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out title, text, and logo vertically */
+  justify-content: space-between; /* Space out title/text and logo vertically */
   align-items: center;
 }
 
 .about-table-section.full-page-layout .about-text-container {
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .about-table-section.full-page-layout .about-text-line {
-  font-size: min(15px, 1.1vw); /* Scale dynamically based on viewport */
-  line-height: 2.1;
-}
-
-.about-table-section.full-page-layout .about-title {
-  margin-bottom: 0;
-}
-
-.about-table-section.full-page-layout .about-divider {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.about-table-section.full-page-layout .about-footer-logo {
-  margin-top: 20px;
-}
-
-@media (max-width: 900px), (max-height: 720px) {
-  .about-page-body {
-    overflow: auto; /* Enable scrolling on smaller screens or vertical viewports */
-  }
-  
-  .about-table-section.full-page-layout {
-    height: auto;
-    grid-template-columns: 1fr;
-  }
-  
-  .about-table-section.full-page-layout .about-left-col {
-    height: 400px;
-  }
-  
-  .about-table-section.full-page-layout .about-center-col {
-    height: auto;
-    padding: 80px 24px 60px 24px;
-    justify-content: center;
-  }
-  
-  .about-table-section.full-page-layout .about-text-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    gap: 8px;
-  }
-  
-  .about-table-section.full-page-layout .about-text-line {
-    font-size: 14px;
-    line-height: 2.2;
-  }
-  
-  .about-close-btn {
-    top: 20px;
-    left: 20px;
-    background-color: var(--bg-card);
-  }
-}
-
-@media (max-width: 600px) {
-  .about-table-section.full-page-layout .about-text-line {
-    font-size: 3.1vw;
-    line-height: 2.2;
-  }
-  
-  .about-table-section.full-page-layout .about-title {
-    font-size: 1.5rem;
-  }
+  font-size: 15px; /* Maintain 15px font size for perfect line rendering */
+  line-height: 2.3;
 }
