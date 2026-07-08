@@ -1530,10 +1530,11 @@ li {
   
   .about-table-section.full-page-layout .about-text-line {
     width: 100%;
-    font-size: 13px;
+    font-size: clamp(11px, 2.5vw, 13px);
     line-height: 2.2;
     white-space: nowrap;
     text-align: left;
+    letter-spacing: 0.02em;
   }
   
   .about-table-section.full-page-layout .about-right-col {
@@ -1564,9 +1565,10 @@ li {
   }
 
   .about-table-section.full-page-layout .about-text-line {
-    font-size: 3.1vw;
+    font-size: 2.5vw;
     line-height: 2.2;
     white-space: nowrap;
+    letter-spacing: 0.01em;
   }
   
   .about-table-section.full-page-layout .about-title {
