@@ -308,6 +308,10 @@ li {
   z-index: 3;
   text-align: center;
   padding: 0 20px;
+  max-width: calc(100vh * 9 / 16);
+  max-width: calc(100dvh * 9 / 16);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-text {
