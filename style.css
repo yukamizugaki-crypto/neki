@@ -806,6 +806,14 @@ li {
   margin: 0 auto 40px auto;
 }
 
+.pc-text {
+  display: flex !important;
+}
+
+.sp-text {
+  display: none !important;
+}
+
 .about-text-container {
   width: fit-content;
   max-width: 100%;
@@ -1508,17 +1516,31 @@ li {
     align-items: center;
   }
   
-  .about-table-section.full-page-layout .about-text-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    gap: 8px;
+  .pc-text {
+    display: none !important;
   }
   
-  .about-table-section.full-page-layout .about-text-line {
-    font-size: 15px; /* Increased from 14px */
-    line-height: 2.4; /* Increased from 2.2 */
-    white-space: normal; /* Allow text wrapping on mobile */
-    word-wrap: break-word;
+  .sp-text {
+    display: block !important;
+    width: 100% !important;
+    max-width: 600px;
+    margin: 30px auto !important;
+    box-sizing: border-box;
+  }
+  
+  .about-text-para {
+    font-family: var(--font-serif);
+    font-size: 15px;
+    line-height: 2.2;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  
+  .about-text-para:last-child {
+    margin-bottom: 0;
   }
   
   .about-table-section.full-page-layout .about-right-col {
@@ -1544,11 +1566,14 @@ li {
     padding: 60px 20px; /* Reduced horizontal padding for smaller mobile screens */
   }
 
-  .about-table-section.full-page-layout .about-text-line {
-    font-size: 14.5px; /* Increased from 3.1vw (~11px) */
-    line-height: 2.4; /* Increased from 2.2 */
-    white-space: normal; /* Allow text wrapping */
-    word-wrap: break-word;
+  .sp-text {
+    padding: 0 12px;
+  }
+  
+  .about-text-para {
+    font-size: 14.5px;
+    line-height: 2.1;
+    margin-bottom: 20px;
   }
   
   .about-table-section.full-page-layout .about-title {
