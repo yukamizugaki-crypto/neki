@@ -1562,7 +1562,7 @@ li {
   
   .about-table-section.full-page-layout .about-right-col {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     height: auto;
     gap: 0;
     background-color: var(--bg-primary);
