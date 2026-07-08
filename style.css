@@ -1595,7 +1595,7 @@ li {
     text-align: left; /* Align left to match PC/Mock version */
     color: #ffffff; /* White text */
     font-family: var(--font-serif);
-    font-size: min(1.05rem, 4.2vw); /* Prominent serif text */
+    font-size: min(0.85rem, 3.5vw); /* Reduced one size for a more delicate look */
     font-weight: 400; /* Regular weight to match mock */
     letter-spacing: 0.08em;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Strong text shadow for readability */
