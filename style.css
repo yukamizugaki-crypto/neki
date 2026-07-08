@@ -1588,11 +1588,11 @@ li {
 
   .about-table-section.full-page-layout .about-right-label {
     position: absolute;
-    bottom: 12px;
-    left: 12px;
-    right: 12px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
     margin: 0;
-    text-align: center;
+    text-align: left; /* Align left to match PC version */
     color: var(--text-light);
     font-family: var(--font-serif);
     font-size: 0.8rem;
