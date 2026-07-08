@@ -1501,6 +1501,8 @@ li {
 @media (max-width: 900px) {
   .about-table-section.full-page-layout {
     grid-template-columns: 1fr;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   .about-table-section.full-page-layout .about-left-col {
@@ -1508,6 +1510,7 @@ li {
   }
   
   .about-table-section.full-page-layout .about-center-col {
+    height: auto !important;
     min-height: auto;
     padding: 80px 24px; /* Equal top and bottom padding for vertical centering */
     display: flex;
