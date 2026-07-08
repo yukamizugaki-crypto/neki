@@ -1588,20 +1588,21 @@ li {
 
   .about-table-section.full-page-layout .about-right-label {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
+    bottom: 20px;
+    left: 16px;
+    right: 16px;
     margin: 0;
-    text-align: left; /* Align left to match PC version */
-    color: var(--text-light);
+    text-align: left; /* Align left to match PC/Mock version */
+    color: #ffffff; /* White text */
     font-family: var(--font-serif);
-    font-size: 0.8rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    font-size: min(1.05rem, 4.2vw); /* Prominent serif text */
+    font-weight: 400; /* Regular weight to match mock */
+    letter-spacing: 0.08em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Strong text shadow for readability */
     z-index: 2;
     opacity: 1; /* Always visible */
     pointer-events: none;
+    line-height: 1.4;
   }
 
   .about-table-section.full-page-layout .about-right-item::after {
@@ -1612,7 +1613,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%);
     pointer-events: none;
     z-index: 1;
     opacity: 1; /* Always visible */
