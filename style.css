@@ -872,7 +872,8 @@ li {
   transition: transform 0.6s ease;
 }
 
-.about-right-item:hover .about-right-img {
+.about-right-item:hover .about-right-img,
+.about-right-item.show-desc .about-right-img {
   transform: scale(1.04);
 }
 
@@ -888,6 +889,9 @@ li {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   pointer-events: none;
   z-index: 2;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(10px); /* Subtle slide up transition */
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .about-right-item::after {
@@ -897,9 +901,33 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 40%);
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
   pointer-events: none;
   z-index: 1;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+/* Show on hover for devices that support it */
+@media (hover: hover) {
+  .about-right-item:hover .about-right-label {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-right-item:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Show on click/tap toggle */
+.about-right-item.show-desc .about-right-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-right-item.show-desc::after {
+  opacity: 1;
 }
 
 /* --- Instagram Section --- */
@@ -1568,39 +1596,63 @@ li {
   }
   
   .about-table-section.full-page-layout .about-right-item {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
     height: auto;
+    overflow: hidden;
   }
   
   .about-table-section.full-page-layout .about-right-img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     border-radius: 0;
+    display: block;
   }
-
 
   .about-table-section.full-page-layout .about-right-label {
-    position: static;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 12px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    margin: 0;
     text-align: center;
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-family: var(--font-serif);
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.05em;
-    text-shadow: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
   }
 
-  .about-table-section.full-page-layout .about-right-item:last-child .about-right-label {
-    margin-bottom: 0;
+  .about-table-section.full-page-layout .about-right-item.show-desc .about-right-label {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .about-table-section.full-page-layout .about-right-item::after {
-    display: none;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .about-table-section.full-page-layout .about-right-item.show-desc::after {
+    opacity: 1;
   }
   
   .about-close-btn {
