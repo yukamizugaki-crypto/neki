@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.main-header');
   
   const handleScroll = () => {
+    if (!header) return;
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
