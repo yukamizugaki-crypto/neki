@@ -316,11 +316,12 @@ li {
 
 .hero-text {
   font-family: var(--font-serif);
-  font-size: 2.2rem;
-  line-height: 2.2;
+  font-size: 2.3vh;
+  font-size: 2.3dvh;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.18em;
-  white-space: pre-line;
+  white-space: nowrap;
   opacity: 0;
   animation: heroTextSequence 7s ease forwards;
 }
@@ -1394,10 +1395,15 @@ li {
     object-fit: cover !important;
   }
 
+  .hero-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 
   .hero-text {
-    font-size: 1.6rem;
+    font-size: min(1.2rem, 4.8vw);
     letter-spacing: 0.15em;
+    white-space: nowrap;
   }
 
   .section-padding {
