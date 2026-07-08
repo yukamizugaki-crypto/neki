@@ -1377,15 +1377,17 @@ li {
   }
 
   .hero-section {
-    height: auto;
-    aspect-ratio: 9 / 16;
+    height: 100vh;
+    height: 100dvh;
     width: 100%;
-    max-height: 100vh;
-    max-height: 100dvh;
+    aspect-ratio: auto;
+    max-height: none;
   }
 
   .hero-video {
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
 
 
