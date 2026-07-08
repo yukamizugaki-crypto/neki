@@ -1530,10 +1530,9 @@ li {
   
   .about-table-section.full-page-layout .about-text-line {
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 2.2;
-    white-space: normal;
-    word-wrap: break-word;
+    white-space: nowrap;
     text-align: left;
   }
   
@@ -1565,8 +1564,9 @@ li {
   }
 
   .about-table-section.full-page-layout .about-text-line {
-    font-size: 14.5px;
+    font-size: 3.1vw;
     line-height: 2.2;
+    white-space: nowrap;
   }
   
   .about-table-section.full-page-layout .about-title {
