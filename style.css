@@ -1642,14 +1642,7 @@ li {
     letter-spacing: 0.04em;
   }
 
-  
-  .about-table-section.full-page-layout .about-right-img {
-    height: 160px;
-  }
 
-  .about-table-section.full-page-layout .about-right-label {
-    margin-bottom: 8px;
-  }
   
   .about-table-section.full-page-layout .about-title {
     font-size: 1.7rem; /* Increased from 1.5rem */
