@@ -1491,6 +1491,10 @@ li {
 
 /* --- About Table Section Responsive --- */
 @media (max-width: 900px) {
+  .about-page-body {
+    overflow-y: auto !important;
+  }
+
   .about-table-section.full-page-layout {
     grid-template-columns: 1fr;
     height: auto !important;
