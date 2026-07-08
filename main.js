@@ -179,33 +179,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // 5. About Page Image Tap Handler (toggle label description on tap/click)
-  const aboutRightItems = document.querySelectorAll('.about-right-item');
-  if (aboutRightItems.length) {
-    aboutRightItems.forEach(item => {
-      item.addEventListener('click', (e) => {
-        // Toggle active class on this clicked item
-        const isAlreadyActive = item.classList.contains('show-desc');
-        
-        // Hide others first
-        aboutRightItems.forEach(otherItem => {
-          otherItem.classList.remove('show-desc');
-        });
-        
-        if (!isAlreadyActive) {
-          item.classList.add('show-desc');
-        }
-      });
-    });
-    
-    // Close overlay description when clicking anywhere outside of the items
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.about-right-item')) {
-        aboutRightItems.forEach(item => {
-          item.classList.remove('show-desc');
-        });
-      }
-    });
-  }
 });
