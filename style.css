@@ -1564,8 +1564,8 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
-    gap: 0;
-    background-color: var(--bg-primary);
+    gap: 2px;
+    background-color: #ffffff;
     padding: 0;
     box-sizing: border-box;
   }
